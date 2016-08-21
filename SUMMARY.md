@@ -1,9 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [First Chapter](chapter1.md)
-* [RWD media query](how-use-rwd.md)
-* [RWD 裝置測試](rwd-裝置測試.md)
-* [RWD image](rwd-image.md)
-* [RWD table](rwd-table.md)
+* [RWD prepare](00_rwd_prepare.md)
+* [RWD media query](01_rwd_usage.md)
+* [RWD usage by Bootstrap](02_rwd_bootstrap_usage.md)
 
