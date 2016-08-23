@@ -1,0 +1,351 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Bootstrap quick start · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="02_rwd_bootstrap_usage.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00_rwd_prepare.html">
+            
+                <a href="00_rwd_prepare.html">
+            
+                    
+                    RWD prepare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="01_rwd_usage.html">
+            
+                <a href="01_rwd_usage.html">
+            
+                    
+                    RWD media query
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02_rwd_bootstrap_usage.html">
+            
+                <a href="02_rwd_bootstrap_usage.html">
+            
+                    
+                    RWD usage by Bootstrap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="03_rwd_bootstrap_quick_start.html">
+            
+                <a href="03_rwd_bootstrap_quick_start.html">
+            
+                    
+                    Bootstrap quick start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Bootstrap quick start</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5FEB;&#x901F;&#x4F7F;&#x7528;-bootstrap">&#x5FEB;&#x901F;&#x4F7F;&#x7528; Bootstrap</h1><p>&#x9996;&#x5148;&#x9032;&#x884C;&#x5B89;&#x88DD; <code>bower</code></p><pre><code>npm install -g bower</code></pre>
+<p>&#x900F;&#x904E; bower &#x5B89;&#x88DD;&#x6700;&#x65B0;&#x7684; bootstrap</p><pre><code>bower install bootstrap</code></pre>
+<p>&#x5B89;&#x88DD;&#x5F8C;&#x8CC7;&#x6599;&#x5132;&#x5B58;&#x67B6;&#x69CB;&#x5982;&#x4E0B;</p><pre><code>&#x2514;&#x2500;&#x2500; bower_components
+    &#x251C;&#x2500;&#x2500; bootstrap
+    &#x2502;   &#x251C;&#x2500;&#x2500; CHANGELOG.md
+    &#x2502;   &#x251C;&#x2500;&#x2500; Gemfile
+    &#x2502;   &#x251C;&#x2500;&#x2500; Gemfile.lock
+    &#x2502;   &#x251C;&#x2500;&#x2500; Gruntfile.js
+    &#x2502;   &#x251C;&#x2500;&#x2500; ISSUE_TEMPLATE.md
+    &#x2502;   &#x251C;&#x2500;&#x2500; LICENSE
+    &#x2502;   &#x251C;&#x2500;&#x2500; README.md
+    &#x2502;   &#x251C;&#x2500;&#x2500; bower.json
+    &#x2502;   &#x251C;&#x2500;&#x2500; dist
+    &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; css
+    &#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; bootstrap-theme.css
+    &#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; bootstrap-theme.css.map
+    &#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; bootstrap-theme.min.css
+    &#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; bootstrap-theme.min.css.map
+    &#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; bootstrap.css
+    &#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; bootstrap.css.map
+    &#x2502;   &#x2502;   &#x2502;   &#x251C;&#x2500;&#x2500; bootstrap.min.css</code></pre>
+<p>&#x8CC7;&#x6599;&#x593E;&#x4E2D;&#x5982;&#x679C;&#x6709;&#x4EE5;&#x4E0A;&#x67B6;&#x69CB;&#xFF0C;&#x8868;&#x793A;&#x5B89;&#x88DD;&#x5B8C;&#x6210;&#xFF0C;&#x63A5;&#x8457;&#x53EF;&#x4EE5;&#x65B0;&#x589E; <code>index.html</code> &#x7DB2;&#x9801;&#xFF0C;&#x8B93; bootstrap &#x53EF;&#x4EE5;&#x751F;&#x52D5;&#x6D3B;&#x6F51;&#x9032;&#x884C;&#x8F09;&#x5165;&#x3002;</p><p>index.html</p><pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags --&gt;
+    &lt;title&gt;Bootstrap 101 Template&lt;/title&gt;
+
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --&gt;
+    &lt;!-- WARNING: Respond.js doesn&apos;t work if you view the page via file:// --&gt;
+    &lt;!--[if lt IE 9]&gt;
+      &lt;script src=&quot;https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js&quot;&gt;&lt;/script&gt;
+      &lt;script src=&quot;https://oss.maxcdn.com/respond/1.4.2/respond.min.js&quot;&gt;&lt;/script&gt;
+    &lt;![endif]--&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+
+    &lt;!-- jQuery (necessary for Bootstrap&apos;s JavaScript plugins) --&gt;
+    &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;!-- Include all compiled plugins (below), or include individual files as needed --&gt;
+    &lt;script src=&quot;js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h3 id="step01">Step01</h3><p>&#x56E0;&#x70BA;&#x6211;&#x5011;&#x9801;&#x9762;&#x4E0A;&#x6703;&#x9700;&#x8981; container &#x9084;&#x6709;&#x63A5;&#x4E0B;&#x4F86; menu &#x7684;&#x52A0;&#x5165;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981;&#x8A2D;&#x5B9A;&#x81EA;&#x5DF1;&#x7684; css &#x6A94;&#x6848;&#x5C07; bootstrap &#x7684;&#x9810;&#x8A2D;&#x6A23;&#x5F0F;&#x9032;&#x884C;&#x8ABF;&#x6574;&#xFF0C;&#x6240;&#x4EE5;&#x6703;&#x9700;&#x8981;&#x9032;&#x884C;&#x8A2D;&#x5B9A;&#x5F15;&#x5165; css &#x6A94;&#x6848;&#x65B9;&#x5F0F;&#x3002;</p><p>&#x8ACB;&#x5728; <code>link</code> bootstrap &#x9023;&#x7D50;&#x5E95;&#x4E0B;&#x589E;&#x52A0;&#x5F15;&#x5165; <code>starter-template.css</code></p><pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;./assert/css/starter-template.css&quot;&gt;</code></pre>
+<h3 id="step02">Step02</h3><p>&#x5728;&#x9801;&#x9762;&#x4E2D;&#x8A66;&#x8457;&#x52A0;&#x5165; <code>Bootstrap menu</code> &#xFF0C;&#x5C07;&#x5E95;&#x4E0B;&#x9019;&#x6BB5; nav &#x7684;&#x90E8;&#x5206;&#x52A0;&#x5165;&#x5230; body &#x958B;&#x982D;&#x4E4B;&#x5F8C;&#xFF0C;&#x8A2D;&#x5B9A;&#x7DB2;&#x7AD9;&#x7684; menu &#x5167;&#x5BB9;&#x3002;</p><pre><code>    &lt;nav class=&quot;navbar navbar-inverse navbar-fixed-top&quot;&gt;
+      &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+          &lt;button type=&quot;button&quot; class=&quot;navbar-toggle collapsed&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbar&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;navbar&quot;&gt;
+            &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+            &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Project name&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;navbar&quot; class=&quot;collapse navbar-collapse&quot;&gt;
+          &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+            &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/nav&gt;</code></pre>
+<h3 id="step03">Step03</h3><p>&#x6B64;&#x6642;&#x6703;&#x767C;&#x73FE; h1 &#x7684;&#x5167;&#x5BB9;&#x88AB; menu &#x84CB;&#x4F4F;&#x4E86;&#xFF0C;&#x56E0;&#x6B64;&#x9700;&#x8981; container &#x7684;&#x5354;&#x52A9;&#xFF0C;&#x900F;&#x904E;&#x5BB9;&#x5668;&#x5C07; h1 &#x5305;&#x8D77;&#x4F86;&#x3002;</p><pre><code>    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;starter-template&quot;&gt;
+        &lt;!-- Step03-1. &#x5C07; h1 &#x8CBC;&#x4E0A;&#x5230;&#x6B64;&#x65B9;&#x4E0B;&#x65B9;&#x8655; --&gt;
+        &lt;h1&gt;Hello, world!&lt;/h1&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+<h3 id="final">Final</h3><p>&#x900F;&#x904E; web server &#x6211;&#x5011;&#x6E2C;&#x8A66;&#x4E00;&#x4E0B;&#xFF0C;&#x5167;&#x5BB9;&#x7D50;&#x679C;&#x61C9;&#x8A72;&#x7B26;&#x5408;&#x5982;&#x4E0B;&#x7684;&#x756B;&#x9762;&#xFF0C;&#x5C31;&#x8868;&#x793A;&#x6211;&#x5011;&#x4F7F;&#x7528; bootstap &#x6846;&#x67B6;&#x6B63;&#x5F0F;&#x6210;&#x529F;&#xFF0C;&#x9019;&#x4E5F;&#x662F;&#x6211;&#x5011;&#x7B2C;&#x4E00;&#x500B;&#x5B8C;&#x7F8E;&#x7684; starter bootstrap page.</p><p><img src="https://cldup.com/XY36IbmXD4.png"></p><p>&#x540C;&#x6642;&#x6211;&#x5011;&#x4E5F;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x624B;&#x6A5F;&#x87A2;&#x5E55;&#x6E2C;&#x8A66;&#xFF0C;&#x6216;&#x8005;&#x900F;&#x904E; chrome &#x6A21;&#x64EC;&#x624B;&#x6A5F;&#x700F;&#x89BD;&#x72C0;&#x614B;&#xFF0C;&#x6703;&#x770B;&#x5230; RWD menu &#x7684;&#x6A23;&#x5F0F;&#x7ACB;&#x5373;&#x5448;&#x73FE;&#x5728;&#x5404;&#x4F4D;&#x9762;&#x524D;&#x3002;</p><p><img src="https://cldup.com/UBxGS6rY-L.png"></p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02_rwd_bootstrap_usage.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: RWD usage by Bootstrap">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bootstrap quick start","level":"1.5","depth":1,"previous":{"title":"RWD usage by Bootstrap","level":"1.4","depth":1,"path":"02_rwd_bootstrap_usage.md","ref":"02_rwd_bootstrap_usage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"03_rwd_bootstrap_quick_start.md","mtime":"2016-08-21T18:38:41.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-23T05:25:26.264Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

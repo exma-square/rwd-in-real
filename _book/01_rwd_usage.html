@@ -1,0 +1,417 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>RWD media query · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="02_rwd_bootstrap_usage.html" />
+    
+    
+    <link rel="prev" href="00_rwd_prepare.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="00_rwd_prepare.html">
+            
+                <a href="00_rwd_prepare.html">
+            
+                    
+                    RWD prepare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="01_rwd_usage.html">
+            
+                <a href="01_rwd_usage.html">
+            
+                    
+                    RWD media query
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="02_rwd_bootstrap_usage.html">
+            
+                <a href="02_rwd_bootstrap_usage.html">
+            
+                    
+                    RWD usage by Bootstrap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="03_rwd_bootstrap_quick_start.html">
+            
+                <a href="03_rwd_bootstrap_quick_start.html">
+            
+                    
+                    Bootstrap quick start
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >RWD media query</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="rwd-&#x898F;&#x7BC4;">RWD &#x898F;&#x7BC4;</h2><p><a href="https://www.w3.org/TR/css3-mediaqueries/" target="_blank">https://www.w3.org/TR/css3-mediaqueries/</a></p><p>RWD &#x5927;&#x90E8;&#x5206;&#x4F7F;&#x7528;&#x5167;&#x5BB9;&#x662F;&#x6839;&#x64DA; W3C &#x6240;&#x898F;&#x7BC4;&#x7684; media queries &#x9032;&#x884C;&#x5BE6;&#x505A;&#xFF0C;&#x800C;&#x9019;&#x4E9B;&#x898F;&#x7BC4;&#x4E26;&#x4E0D;&#x662F;&#x5168;&#x65B0;&#x7684;&#x7CFB;&#x7D71;&#x67B6;&#x69CB;&#xFF0C;&#x53EA;&#x662F;&#x91DD;&#x5C0D; HTML4 &#x53CA; CSS2 &#x672C;&#x8EAB;&#x4E4B;&#x524D;&#x7684;&#x67B6;&#x69CB;&#x9032;&#x884C;&#x7684;&#x5EF6;&#x4F38;&#x3002;</p><p>HTML4 &#x53CA; CSS2 &#x4E2D;&#x5C31;&#x53EF;&#x4EE5;&#x8A2D;&#x5B9A; <code>screen</code>&#xFF0C; <code>print</code> &#x4E0D;&#x540C;&#x7528;&#x9014;&#x4E0A;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x8A2D;&#x5B9A;&#xFF0C;&#x4F8B;&#x5982;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x5B57;&#x578B;&#xFF0C;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x5B57;&#x9AD4;&#x5927;&#x5C0F;&#x89E3;&#x6790;&#x5EA6;&#x3002;</p><p>&#x6240;&#x4EE5;&#x5C0D;&#x65BC; RWD &#x7684;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x5927;&#x591A;&#x63A1;&#x7528;&#x8207; CSS2 CSS3 &#x76F8;&#x540C;&#x7684;&#x63CF;&#x8FF0;&#x65B9;&#x5F0F;&#xFF0C;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x5C6C;&#x6027;&#x7D66;&#x4E88;&#x65B9;&#x5F0F;&#x9032;&#x884C;&#x7DB2;&#x9801;&#x5916;&#x89C0;&#x7684;&#x63CF;&#x8FF0;&#x3002;</p><h2 id="rwd-&#x8D77;&#x624B;&#x5F0F;">RWD &#x8D77;&#x624B;&#x5F0F;</h2><p>RWD &#x4E3B;&#x8981;&#x662F;&#x4EE5; HTML &#x4EE5;&#x53CA; CSS3 &#x4E2D; media queries &#x9054;&#x6210;&#x591A;&#x91CD;&#x87A2;&#x5E55;&#x5C3A;&#x5BF8;&#x89E3;&#x6790;&#x5EA6;&#x7684;&#x8655;&#x7406;&#x3002;</p><p>&#x5728; HTML5 &#x7684;&#x6A19;&#x6E96;&#x4E2D;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x9801;&#x9762;&#x7684;&#x5BEC;&#x5EA6;&#x53EF;&#x4EE5;&#x4F9D;&#x7167;&#x88DD;&#x7F6E;&#x7684;&#x6AA2;&#x8996;&#x5BEC;&#x5EA6;&#x4F86;&#x5448;&#x73FE;&#xFF0C;&#x518D;&#x5229;&#x7528; CSS &#x7684;media queries &#x8A2D;&#x5B9A;&#x4E0D;&#x540C;&#x87A2;&#x5E55;&#x89E3;&#x6790;&#x5EA6;&#x4E0B;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684; CSS &#x7D50;&#x679C;&#x4F86;&#x5448;&#x73FE;&#x9801;&#x9762;&#x3002;</p><p>&#x6240;&#x4EE5;&#x5728;&#x5C08;&#x6848;&#x4E00;&#x958B;&#x59CB;&#x6642;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x9032;&#x884C;&#x87A2;&#x5E55;&#x5C3A;&#x5BF8;&#x9032;&#x884C;&#x898F;&#x5283;&#xFF0C;&#x4EE5;&#x53CA;&#x8A2D;&#x5B9A;&#x689D;&#x4EF6;&#x9650;&#x5236;&#xFF0C;&#x63D0;&#x4F9B;&#x4E0D;&#x540C;&#x5BEC;&#x5EA6;&#x756B;&#x9762;&#x9032;&#x884C;&#x4E0D;&#x540C; CSS &#x7684;&#x8A2D;&#x5B9A;&#x3002;</p><h2 id="&#x9801;&#x9762;&#x89E3;&#x6790;&#x5EA6;&#x8A2D;&#x5B9A;">&#x9801;&#x9762;&#x89E3;&#x6790;&#x5EA6;&#x8A2D;&#x5B9A;</h2><p>&#x624B;&#x6A5F;&#x88DD;&#x7F6E;&#x4E2D;&#x9664;&#x4E86;&#x4E0A;&#x8FF0;&#x7684; media queries &#x63CF;&#x8FF0;&#x689D;&#x4EF6;&#x4E4B;&#x5916;&#xFF0C;&#x9700;&#x8981;&#x7279;&#x5225;&#x6CE8;&#x610F;&#x5C0D;&#x65BC; <code>pixel</code> &#x6B64;&#x55AE;&#x4F4D;&#x7684;&#x63CF;&#x8FF0;&#x3002;</p><p>&#x5C0D;&#x65BC;&#x4E0D;&#x540C;&#x87A2;&#x5E55;&#x89E3;&#x6790;&#x5EA6;&#x4F86;&#x8AAA;&#xFF0C;pixel &#x4E26;&#x4E0D;&#x4EE3;&#x8868;&#x540C;&#x6A23;&#x7684;&#x55AE;&#x4F4D;&#xFF0C;&#x4F8B;&#x5982; iPhone &#x5728; retina &#x89E3;&#x6790;&#x5EA6;&#x4E2D;&#xFF0C;&#x4E00;&#x500B;&#x55AE;&#x4F4D;&#x70BA; 4 pixel &#xFF0C;&#x5728;&#x9032;&#x884C; media queries &#x901A;&#x5E38;&#x90FD;&#x6703;&#x4E0D;&#x5982;&#x9810;&#x671F;&#x3002;</p><p>&#x56E0;&#x6B64;&#x9700;&#x8981;&#x900F;&#x904E; viewports &#x9032;&#x884C;&#x8A2D;&#x5B9A;&#x87A2;&#x5E55;&#x89E3;&#x6790;&#x5EA6;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; html &#x4E2D;&#x7684; head &#x4E4B;&#x9593;&#x52A0;&#x5165; viewports&#xFF0C;&#x8A2D;&#x5B9A;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;&#xFF0C;</p><pre><code>&lt;html&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;/html&gt;</code></pre>
+<h2 id="media-queries-&#x4F7F;&#x7528;&#x65B9;&#x6CD5;">media queries &#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2><p>&#x9996;&#x5148;&#x5728;&#x6574;&#x500B; html &#x67B6;&#x69CB;&#x88E1;&#x9762;&#xFF0C;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x4EE5;&#x4E0B;&#x65B9;&#x5F0F;&#x9032;&#x884C;&#x5F15;&#x7528;&#xFF0C;media queries &#x689D;&#x4EF6;&#x65B9;&#x5F0F;&#xFF0C;</p><pre><code>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+ media=&quot;screen and (max-device-width: 480px)&quot;
+ href=&quot;shetland.css&quot;&gt;</code></pre>
+<p>&#x53C8;&#x6216;&#x8005;&#x6211;&#x5011;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x4EE5;&#x4E0B;&#x63A1;&#x7528;&#x985E;&#x4F3C;&#x65E2;&#x6709; CSS &#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x53EA;&#x662F;&#x52A0;&#x4E0A; <code>@media</code> &#x65B9;&#x5F0F;&#x9032;&#x884C;&#x63CF;&#x8FF0;&#xFF0C;</p><pre><code>@media (query) {
+  /* CSS Rules used when query matches */
+}</code></pre>
+<p>&#x4EE5;&#x5BE6;&#x969B;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x4F86;&#x770B;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x8A2D;&#x5B9A;&#x5C3A;&#x5BF8;&#x8207;&#x5C3A;&#x5BF8;&#x7BC4;&#x570D;&#x4E4B;&#x9593;&#xFF0C;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#x7684;&#x8A2D;&#x5B9A;&#x65B9;&#x5F0F;&#xFF0C;&#x4EE5;&#x4E0B;&#x5C31;&#x662F;&#x8A2D;&#x5B9A;&#x8996;&#x7A97;&#x5BEC;&#x5EA6;&#x5927;&#x65BC; 400px &#x4F46;&#x5C0F;&#x65BC; 700px &#x6642;&#xFF0C;&#x5957;&#x7528;&#x67D0;&#x4E00;&#x6BB5; selector &#x7684;&#x5C6C;&#x6027;&#xFF0C;&#x6B64;&#x6642;&#x5C6C;&#x6027;&#x6B0A;&#x91CD;&#x5C07;&#x6703;&#x5927;&#x65BC;&#x539F;&#x672C;&#x7684;&#x8A2D;&#x5B9A;&#xFF0C;&#x6240;&#x4EE5;&#x901A;&#x5E38; media queries &#x5982;&#x679C;&#x90FD;&#x653E;&#x7F6E;&#x65BC;&#x540C;&#x4E00;&#x500B; css &#x6A94;&#x6848;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x6703;&#x7F6E;&#x653E;&#x65BC;&#x4E0B;&#x65B9;&#x8B93; css &#x63CF;&#x8FF0;&#x6B0A;&#x91CD;&#x63D0;&#x9AD8;&#x3002;</p><pre><code>@media screen and (min-width: 400px) and (max-width: 700px) {
+    .selector {...}
+}</code></pre>
+<p>&#x5982;&#x679C;&#x8996;&#x7A97;&#x6700;&#x5C0F;&#x5C3A;&#x5BF8;&#x7684;&#x6642;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x8A2D;&#x5B9A;&#x70BA;500px&#xFF0C;&#x4F7F;&#x7528;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x5982;&#x4E0B;&#xFF0C;</p><pre><code>@media screen and (min-width:500px) {
+    .selector {...}  
+}</code></pre>
+<p>&#x5982;&#x679C;&#x8996;&#x7A97;&#x70BA;&#x76F4;&#x7ACB;&#xFF0C;&#x63A1;&#x7528;&#x65B9;&#x5F0F;&#x5982;&#x4E0B;</p><pre><code>@media screen and  (orientation: portrait) {
+    .selector {...}  
+}</code></pre>
+<h2 id="&#x5176;&#x4ED6;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;">&#x5176;&#x4ED6;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2><p>&#x9664;&#x4E86;&#x4E0A;&#x9762;&#x7684;&#x76F4;&#x8FF0;&#x5F0F; css &#x63CF;&#x8FF0;&#x65B9;&#x5F0F;&#x4E4B;&#x5916;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x5F15;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x4F86;&#x9032;&#x884C;&#xFF0C;&#x689D;&#x4EF6;&#x53CA;&#x904E;&#x6FFE;&#x65B9;&#x6CD5;&#x540C;&#x6A23;&#xFF0C;&#x50C5;&#x6703;&#x63A1;&#x7528;&#x67D0;&#x6BB5; css &#x6A94;&#x6848;&#xFF0C;</p><pre><code>&lt;link rel=&quot;stylesheet&quot; media=&quot;not|only screen and (color)&quot; href=&quot;example.css&quot; /&gt;</code></pre>
+<p>&#x67D0;&#x4E9B;&#x820A;&#x7248;&#x700F;&#x89BD;&#x5668;&#x53EA;&#x80FD;&#x8B80;media type(screen,projector&#x7B49;&#x7B49;)&#xFF0C;&#x4E0D;&#x6703;&#x8B80;media feature&#xFF0C;&#x4E5F;&#x4E0D;&#x6703;&#x8B80;not&#x6216;only&#xFF0C;&#x56E0;&#x6B64;&#x4E5F;&#x4E0D;&#x6703;&#x5957;&#x7528;&#x6B64;media query&#x5F8C;&#x7684;CSS&#x6A94;&#x3002;</p><h2 id="rwd-&#x76F4;&#x63A5;&#x5957;&#x7528;">RWD &#x76F4;&#x63A5;&#x5957;&#x7528;</h2><p>&#x5982;&#x679C;&#x4F60;&#x8DDF;&#x6211;&#x4E00;&#x6A23;&#x4E0D;&#x60F3;&#x77E5;&#x9053;&#x539F;&#x7406;&#xFF0C;&#x53EA;&#x60F3;&#x8981;&#x5FEB;&#x9EDE;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x900F;&#x904E;&#x4EE5;&#x4E0B;&#x7684;&#x7BC4;&#x4F8B;&#x76F4;&#x63A5;&#x5957;&#x7528;&#x5728;&#x81EA;&#x5DF1;&#x7684; css &#x6A94;&#x6848;&#x4E2D;&#xFF0C;&#x958B;&#x59CB;&#x9032;&#x884C;&#x700F;&#x89BD;&#xFF0C;&#x900F;&#x904E; chrome &#x700F;&#x89BD;&#x5668;&#xFF0C;&#x53EF;&#x4EE5;&#x900F;&#x904E; <code>&#x958B;&#x767C;&#x8005;&#x6A21;&#x5F0F;&#x5DE5;&#x5177;</code> &#x9032;&#x884C;&#x624B;&#x6301;&#x5F0F;&#x88DD;&#x7F6E;&#x6A21;&#x64EC;&#xFF0C;&#x6A21;&#x64EC;&#x8996;&#x7A97;&#x5927;&#x5C0F;&#xFF0C;&#x4EE5;&#x53CA;&#x9EDE;&#x64CA;&#x6548;&#x679C;&#xFF0C;&#x770B;&#x5230;&#x5BE6;&#x969B;&#x7684; css &#x7DE8;&#x5BEB;&#x7D50;&#x679C;&#xFF0C;</p><pre><code>/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+/* Styles */
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+/* Styles */
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+/* Styles */
+}</code></pre>
+<h3 id="&#x53C3;&#x8003;&#x8CC7;&#x6599;">&#x53C3;&#x8003;&#x8CC7;&#x6599;</h3><ul><li><a href="https://developers.google.com/web/fundamentals/design-and-ui/responsive/fundamentals/use-media-queries?hl=en" target="_blank">Use CSS media queries for responsiveness</a>
+</li>
+<li><a href="https://webmasters.googleblog.com/2012/04/responsive-design-harnessing-power-of.html" target="_blank">Responsive design &#x2013; harnessing the power of media queries</a>
+</li>
+<li><a href="https://responsivedesign.is/develop/browser-feature-support/media-queries-for-common-device-breakpoints" target="_blank">MEDIA QUERIES FOR COMMON DEVICE BREAKPOINTS</a>
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="00_rwd_prepare.html" class="navigation navigation-prev " aria-label="Previous page: RWD prepare">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="02_rwd_bootstrap_usage.html" class="navigation navigation-next " aria-label="Next page: RWD usage by Bootstrap">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"RWD media query","level":"1.3","depth":1,"next":{"title":"RWD usage by Bootstrap","level":"1.4","depth":1,"path":"02_rwd_bootstrap_usage.md","ref":"02_rwd_bootstrap_usage.md","articles":[]},"previous":{"title":"RWD prepare","level":"1.2","depth":1,"path":"00_rwd_prepare.md","ref":"00_rwd_prepare.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"01_rwd_usage.md","mtime":"2016-08-21T11:07:59.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-23T05:25:26.264Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
